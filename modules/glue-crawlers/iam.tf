@@ -30,7 +30,7 @@ resource "aws_iam_role" "glue_crawlers_role" {
           Effect = "Allow"
           Resource = [
             "${var.raw_bucket_arn}*",
-            "${var.trusted_bucket_arn}*",
+            "${var.processed_bucket_arn}*",
           ]
         }
       ]

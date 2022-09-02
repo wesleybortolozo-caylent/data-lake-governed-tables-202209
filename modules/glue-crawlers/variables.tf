@@ -3,9 +3,9 @@ variable "raw_bucket_arn" {
   description = "ARN of the Data Lake Raw Bucket."
 }
 
-variable "trusted_bucket_arn" {
+variable "processed_bucket_arn" {
   type        = string
-  description = "ARN of the Data Lake Trusted Bucket."
+  description = "ARN of the Data Lake processed Bucket."
 }
 
 variable "bucket_names" {

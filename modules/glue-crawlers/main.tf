@@ -13,8 +13,8 @@ locals {
 
   schedule_cron = "cron(35 7 * * ? *)"
 
-  raw_bucket_name     = var.bucket_names[0]
-  trusted_bucket_name = var.bucket_names[1]
+  raw_bucket_name       = var.bucket_names[0]
+  processed_bucket_name = var.bucket_names[1]
 }
 
 resource "aws_glue_crawler" "crawler_personality_ratings_raw_db" {
