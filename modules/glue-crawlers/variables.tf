@@ -1,6 +1,11 @@
-# General
-variable "aws_region" {
-  type = string
+variable "raw_bucket_arn" {
+  type        = string
+  description = "ARN of the Data Lake Raw Bucket."
+}
+
+variable "trusted_bucket_arn" {
+  type        = string
+  description = "ARN of the Data Lake Trusted Bucket."
 }
 
 variable "bucket_names" {
